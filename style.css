@@ -1,7 +1,16 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color:  cornflowerblue;
     height:100vh;
     display:flex;
     justify-content: center;
@@ -11,12 +20,13 @@ body{
 
 #clock-container{
     background-color: white;
-    padding: 20px 80px;
-    border-radius: 20px;
+    padding: 3vw 5vw;
+    border-radius: 10px;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
+    border-bottom:10px solid blue;
 }
 
 #clock-container h2{
@@ -87,7 +97,8 @@ body{
 
 
 #alarm-display{
-    visibility:hidden;
+    visibility: hidden;
+    /* display: none; */
 }
 
 #alarm{
